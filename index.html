@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HorizonUI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/app.css" />
+    <!-- <link rel="stylesheet" href="/dist/output.css" /> -->
+  </head>
+  <body>
+    <script src="assets/js/main.js"></script>
+    <div class="relative">
+      <div
+        class="fixed flex justify-center bg-white shadow-xl w-[100%] h-[80px] items-center"
+      >
+        <div
+          class="flex justify-between py-[10px] w-[80%] items-center mx-auto"
+        >
+          <div class="flex items-center justify-between cursor-pointer">
+            <img
+              class="h-[60px] w-[60px]"
+              src="assets/images/Horizon UI Avatar.png"
+              alt=""
+            />
+            <div class="text-[30px] font-bold mx-2">HorizonUI</div>
+          </div>
+          <div class="hidden lg:flex w-[40%] lg:justify-between text-[20px]">
+            <div
+              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors"
+            >
+              Product
+            </div>
+            <div
+              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors"
+            >
+              Features
+            </div>
+            <div
+              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors"
+            >
+              Pricing
+            </div>
+            <div
+              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors"
+            >
+              Company
+            </div>
+          </div>
+          <div class="hidden lg:flex w-[25%] lg:gap-4 text-[20px] justify-end">
+            <div
+              class="flex items-center mx-2 py-[10px] px-[20px] bg-white rounded-[4px] hover:bg-[#E9E3FF] hover:text-[#4318FF] cursor-pointer transition-all"
+            >
+              Log In
+            </div>
+            <div
+              class="flex items-center mx-2 py-[10px] px-[20px] bg-white rounded-[4px] hover:bg-[#E9E3FF] hover:text-[#4318FF] cursor-pointer transition-all"
+            >
+              Sign Up
+            </div>
+          </div>
+          <div onclick="showMenu()">
+            <img
+              class="w-[60px] h-[60px] lg:hidden cursor-pointer"
+              src="assets/images/menu.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="lstMenu hidden fixed right-0 top-0 w-[50%] h-[500px] bg-white"
+      >
+        <div class="flex justify-end h-[80px] items-center mr-[20px]">
+          <img
+            onclick="closeMenu()"
+            class="w-[60px] h-[60px] cursor-pointer"
+            src="assets/images/close.png"
+            alt=""
+          />
+        </div>
+        <div class="">
+          <ul class="flex flex-wrap justify-center">
+            <li
+              class="w-[100%] h-[70px] flex items-center justify-center text-[20px] border-b-[2px] hover:bg-[#E9E3FF]"
+            >
+              Product
+            </li>
+            <li
+              class="w-[100%] h-[70px] flex items-center justify-center text-[20px] border-b-[2px] hover:bg-[#E9E3FF]"
+            >
+              Features
+            </li>
+            <li
+              class="w-[100%] h-[70px] flex items-center justify-center text-[20px] border-b-[2px] hover:bg-[#E9E3FF]"
+            >
+              Pricing
+            </li>
+            <li
+              class="w-[100%] h-[70px] flex items-center justify-center text-[20px] border-b-[2px] hover:bg-[#E9E3FF]"
+            >
+              Company
+            </li>
+          </ul>
+        </div>
+        <div class="flex justify-center mt-[20px]">
+          <div
+            class="flex border-[1px] border-[#4318FF] items-center mx-2 py-[10px] px-[20px] bg-white rounded-[4px] hover:bg-[#E9E3FF] hover:text-[#4318FF] cursor-pointer transition-all"
+          >
+            Log In
+          </div>
+          <div
+            class="flex border-[1px] border-[#4318FF] items-center mx-2 py-[10px] px-[20px] bg-white rounded-[4px] hover:bg-[#E9E3FF] hover:text-[#4318FF] cursor-pointer transition-all"
+          >
+            Sign Up
+          </div>
+        </div>
+      </div>
+      <div
+        class="pt-[100px] flex justify-between w-[80%] mx-auto h-[600px] mb-[80px]"
+      >
+        <div class="flex flex-wrap w-[50%] items-center">
+          <div>
+            <div class="flex items-center my-[10px]">
+              <img
+                class="h-[30px] w-[30px]"
+                src="assets/images/icon 1.png"
+                alt=""
+              />
+              <div
+                class="mx-[10px] text-[14px] text-[#4318FF] tracking-[2px] font-bold"
+              >
+                TRENDEST TAILWIND TEMPLATES
+              </div>
+            </div>
+            <div
+              class="uppercase lg:text-[60px] text-[30px] font-bold my-[10px]"
+            >
+              Take your website to the next level with Horizon UI
+            </div>
+            <div class="w-[80%] gap-0 lg:flex hidden">
+              Save hundreds of hours trying to create and develop a dashboard
+              from scratch. The fastest, most responsive & trendiest dashboard
+              is here. Seriously.
+            </div>
+            <div class="flex items-center my-[20px]">
+              <div
+                class="py-[15px] px-[15px] bg-[#4318FF] flex items-center rounded-[13px] text-[#fff] cursor-pointer hover:shadow-xl"
+              >
+                Get started now
+              </div>
+              <div class="flex py-[10px] px-[20px] items-center cursor-pointer">
+                <img
+                  class="w-[20px] h-[20px] mx-[5px]"
+                  src="assets/images/phone.png"
+                  alt=""
+                />
+                <div class="hover:text-[#4318FF]">Book a free call</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="h-[100%]" src="assets/images/Rectangle 842.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="flex w-[80%] h-[400px] justify-center items-center mx-auto">
+      <div class="">
+        <div class="mb-[50px]">
+          <div class="text-center text-[40px] font-bold my-[10px]">
+            How Horizon works?
+          </div>
+          <div class="text-center mb-[10px]">
+            Tellus rutrum tellus pellentesque eu tincidunt tortor condimentum.
+          </div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex">
+            <div
+              class="w-[40px] h-[40px] rounded-[50%] border border-[#4318FF] flex justify-center items-center text-[#4318FF] mr-[10px] hover:bg-[#4318FF] hover:text-white"
+            >
+              1
+            </div>
+            <div class="w-[80%]">
+              <div class="font-bold">Create your Account</div>
+              <div class="hidden lg:flex">
+                Condimentum vit pellemsque habitant morbi at molestie.
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-[40px] h-[40px]"
+              src="assets/images/chevron_right.png"
+              alt=""
+            />
+          </div>
+          <div class="flex">
+            <div
+              class="w-[40px] h-[40px] rounded-[50%] border border-[#4318FF] flex justify-center items-center text-[#4318FF] mr-[10px] hover:bg-[#4318FF] hover:text-white"
+            >
+              2
+            </div>
+            <div class="w-[80%]">
+              <div class="font-bold">Setup your Account</div>
+              <div class="hidden lg:flex">
+                Condimentum vit pellemsque habitant morbi at molestie.
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="w-[40px] h-[40px]"
+              src="assets/images/chevron_right.png"
+              alt=""
+            />
+          </div>
+          <div class="flex">
+            <div
+              class="w-[40px] h-[40px] rounded-[50%] border border-[#4318FF] flex justify-center items-center text-[#4318FF] mr-[10px] hover:bg-[#4318FF] hover:text-white"
+            >
+              3
+            </div>
+            <div class="w-[80%]">
+              <div class="font-bold">Start creating with Horizon</div>
+              <div class="hidden lg:flex">
+                Condimentum vit pellemsque habitant morbi at molestie.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex w-[80%] h-[400px] justify-center items-center mx-auto my-[30px]"
+    >
+      <div
+        class="w-[30%] h-[60%] hover:shadow-lg rounded-[12px] cursor-pointer"
+      >
+        <div class="flex justify-center">
+          <div
+            class="my-[30px] w-[60px] h-[60px] bg-[#4318FF] flex items-center justify-center rounded-[12px]"
+          >
+            <img
+              class="w-[30px] h-[30px]"
+              src="assets/images/mail.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div>
+          <div
+            class="sm:justify-center text-[23px] font-bold py-[10px] hidden sm:flex"
+          >
+            Share team inboxes
+          </div>
+          <div class="text-center mx-[40px] hidden lg:flex">
+            Whether you have a team of 2 or 200, our shared team inboxes keep
+            everyone
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-[30%] h-[60%] hover:shadow-lg rounded-[12px] cursor-pointer"
+      >
+        <div class="flex justify-center">
+          <div
+            class="my-[30px] w-[60px] h-[60px] bg-[#4318FF] flex items-center justify-center rounded-[12px]"
+          >
+            <img
+              class="w-[30px] h-[30px]"
+              src="assets/images/thunder.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div>
+          <div
+            class="sm:justify-center text-[23px] font-bold py-[10px] hidden sm:flex"
+          >
+            Analytics dashboard
+          </div>
+          <div class="text-center mx-[40px] hidden lg:flex">
+            Whether you have a team of 2 or 200, our shared team inboxes keep
+            everyone
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-[30%] h-[60%] hover:shadow-lg rounded-[12px] cursor-pointer"
+      >
+        <div class="flex justify-center">
+          <div
+            class="my-[30px] w-[60px] h-[60px] bg-[#4318FF] flex items-center justify-center rounded-[12px]"
+          >
+            <img class="w-[30px] h-[30px]" src="assets/images/ava.png" alt="" />
+          </div>
+        </div>
+        <div>
+          <div
+            class="sm:justify-center text-[23px] font-bold py-[10px] hidden sm:flex"
+          >
+            Deliver instant answer
+          </div>
+          <div class="text-center mx-[40px] hidden lg:flex">
+            Whether you have a team of 2 or 200, our shared team inboxes keep
+            everyone
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex h-[700px] w-[80%] justify-center items-center mx-auto my-[30px]"
+    >
+      <div class="flex justify-between">
+        <div class="w-[45%]">
+          <div>
+            <div class="text-[30px] font-bold">
+              Boost your workflow with Horizon
+            </div>
+            <div class="mb-[50px] lg:flex hidden">
+              Urna duis convallis convallis tellus interdum velit laoreet
+              pentesque aliquam tortor consequat porta.
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-between">
+            <div class="w-[40%]">
+              <div class="text-[40px] font-bold">340+</div>
+              <div class="font-bold">Successful Projects</div>
+              <div class="hidden lg:flex">
+                Urna duis convallis convallis tellus interdum velit laoreet.
+              </div>
+            </div>
+            <div class="w-[40%]">
+              <div class="text-[40px] font-bold">$10m</div>
+              <div class="font-bold">Annual Percentage Rate</div>
+              <div class="hidden lg:flex">
+                Urna duis convallis convallis tellus interdum velit laoreet.
+              </div>
+            </div>
+            <div class="w-[40%] mt-[50px]">
+              <div class="text-[40px] font-bold">2.8k+</div>
+              <div class="font-bold">Clients Worldwide</div>
+              <div class="hidden lg:flex">
+                Urna duis convallis convallis tellus interdum velit laoreet.
+              </div>
+            </div>
+            <div class="w-[40%] mt-[50px]">
+              <div class="text-[40px] font-bold">7000+</div>
+              <div class="font-bold">Daily Visits</div>
+              <div class="hidden lg:flex">
+                Urna duis convallis convallis tellus interdum velit laoreet.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative z-[-1] w-[40%]">
+          <img
+            class="h-[100%] w-[100%]"
+            src="assets/images/bg-2 1.png"
+            alt=""
+          />
+          <img
+            class="absolute top-0 h-[100%] w-[100%]"
+            src="assets/images/Thunder 2.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="flex h-[700px] w-[80%] justify-center items-center mx-auto">
+      <div>
+        <div class="mb-[40px]">
+          <div class="mb-[10px] text-center text-[40px] font-bold">
+            Customer Testimonials
+          </div>
+          <div class="text-center w-[60%] mx-auto hidden sm:flex">
+            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua.
+          </div>
+        </div>
+        <div class="flex justify-between gap-20px">
+          <div class="w-[45%] px-[40px] py-[40px] bg-[#F6F8FD] rounded-[23px]">
+            <div class="font-bold text-center text-[20px] mb-[30px]">
+              “A must needed kit for every single software arhitect. It makes
+              your coding life easier and your final product will be blooming.”
+            </div>
+            <div>
+              <div class="flex justify-center">
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="assets/images/Ellipse 1.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-center text-[17px] font-bold">
+                Tiana Schleifer
+              </div>
+              <div class="flex justify-center text-[12px]">CEO & Founder</div>
+            </div>
+          </div>
+          <div class="w-[45%] px-[40px] py-[40px] bg-[#F6F8FD] rounded-[23px]">
+            <div class="font-bold text-center text-[20px] mb-[30px]">
+              “A must needed kit for every single software arhitect. It makes
+              your coding life easier and your final product will be blooming.”
+            </div>
+            <div>
+              <div class="flex justify-center">
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="assets/images/Ellipse 1.png"
+                  alt=""
+                />
+              </div>
+              <div class="flex justify-center text-[17px] font-bold">
+                Tiana Schleifer
+              </div>
+              <div class="flex justify-center text-[12px]">CEO & Founder</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex w-[80%] h-[400px] justify-center items-center mx-auto">
+      <div class="flex justify-between w-[100%]">
+        <div class="">
+          <div class="text-[40px] font-bold">Save time with Horizon.</div>
+          <div class="text-[40px] hidden sm:flex">
+            Turn your visitors into clients.
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div
+            class="flex px-[30px] py-[15px] mr-[20px] border-[2px] border-[#4318FF] rounded-[12px] text-[#4318FF] font-bold hover:text-white hover:bg-[#4318FF] cursor-pointer"
+          >
+            Try Demo
+          </div>
+          <div
+            class="flex px-[30px] py-[15px] mr-[20px] border-[2px] text-white rounded-[12px] bg-[#4318FF] font-bold cursor-pointer"
+          >
+            Get Started Now
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-wrap w-[80%] h-[400px] justify-center items-center mx-auto cursor-pointer"
+    >
+      <div class="flex items-center w-[100%] justify-center">
+        <img
+          class="h-[40px] w-[40px]"
+          src="assets/images/Horizon UI Avatar.png"
+          alt=""
+        />
+        <div class="text-[25px] font-bold mx-2">HorizonUI</div>
+      </div>
+      <div class="w-[80%]">
+        <div class="sm:flex sm:justify-center w-[50%] mx-auto my-[15px]">
+          <div class="hover:text-[#4318FF] cursor-pointer mx-[20px]">About</div>
+          <div class="hover:text-[#4318FF] cursor-pointer mx-[20px]">
+            Features
+          </div>
+          <div class="hover:text-[#4318FF] cursor-pointer mx-[20px]">Blog</div>
+          <div class="hover:text-[#4318FF] cursor-pointer mx-[20px]">
+            Resources
+          </div>
+          <div class="hover:text-[#4318FF] cursor-pointer mx-[20px]">
+            Partners
+          </div>
+          <div class="hover:text-[#4318FF] cursor-pointer mx-[20px]">Help</div>
+          <div class="hover:text-[#4318FF] cursor-pointer mx-[20px]">Terms</div>
+        </div>
+        <div class="sm:flex sm:justify-center w-[20%] mx-auto">
+          <div>
+            <img
+              class="w-[30px] h-[30px] cursor-pointer mx-[10px]"
+              src="assets/images/Facebook.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="w-[30px] h-[30px] cursor-pointer mx-[10px]"
+              src="assets/images/Twitter.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="w-[30px] h-[30px] cursor-pointer mx-[10px]"
+              src="assets/images/Github.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="w-[30px] h-[30px] cursor-pointer mx-[10px]"
+              src="assets/images/LinkedIn.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="w-[30px] h-[30px] cursor-pointer mx-[10px]"
+              src="assets/images/Instagram.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-[100%] text-center">
+        © 2023, Horizon UI Library. All rights reserved.
+      </div>
+    </div>
+  </body>
+</html>
