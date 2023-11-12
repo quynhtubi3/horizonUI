@@ -49,12 +49,13 @@
           </div>
           <div class="hidden lg:flex text-[20px] justify-end">
             <div
-              class="flex items-center mx-2 py-[10px] px-[20px] bg-white rounded-[4px] hover:bg-[#E9E3FF] hover:text-[#4318FF] cursor-pointer transition-all"
+              class="flex justify-center items-center mx-2 py-[10px] px-[20px] bg-white rounded-[4px] hover:bg-[#E9E3FF] hover:text-[#4318FF] cursor-pointer transition-all"
+              onclick="showSignInScr()"
             >
               Log In
             </div>
             <div
-              class="flex items-center mx-2 py-[10px] px-[20px] bg-white rounded-[4px] hover:bg-[#E9E3FF] hover:text-[#4318FF] cursor-pointer transition-all"
+              class="flex justify-center items-center mx-2 py-[10px] px-[20px] bg-white rounded-[4px] hover:bg-[#E9E3FF] hover:text-[#4318FF] cursor-pointer transition-all"
             >
               Sign Up
             </div>
@@ -69,12 +70,12 @@
         </div>
       </div>
       <div
-        class="lstMenu hidden fixed right-0 top-0 w-[50%] h-[470px] bg-white rounded-b-[23px]"
+        class="lstMenu hidden fixed right-0 top-0 w-[50%] h-[470px] bg-white rounded-b-[23px] transition-all"
       >
         <div class="flex justify-end h-[80px] items-center mr-[20px]">
           <img
             onclick="closeMenu()"
-            class="w-[60px] h-[60px] cursor-pointer"
+            class="w-[40px] h-[40px] cursor-pointer"
             src="assets/images/close.png"
             alt=""
           />
@@ -83,21 +84,25 @@
           <ul class="flex flex-wrap justify-center">
             <li
               class="border-t-[2px] w-[100%] h-[70px] flex items-center justify-center text-[20px] border-b-[2px] hover:bg-[#E9E3FF]"
+              onclick="closeMenu()"
             >
               Product
             </li>
             <li
               class="w-[100%] h-[70px] flex items-center justify-center text-[20px] border-b-[2px] hover:bg-[#E9E3FF]"
+              onclick="closeMenu()"
             >
               Features
             </li>
             <li
               class="w-[100%] h-[70px] flex items-center justify-center text-[20px] border-b-[2px] hover:bg-[#E9E3FF]"
+              onclick="closeMenu()"
             >
               Pricing
             </li>
             <li
               class="w-[100%] h-[70px] flex items-center justify-center text-[20px] border-b-[2px] hover:bg-[#E9E3FF]"
+              onclick="closeMenu()"
             >
               Company
             </li>
@@ -106,6 +111,7 @@
         <div class="flex justify-center mt-[20px]">
           <div
             class="flex border-[1px] border-[#4318FF] items-center mx-2 py-[10px] px-[20px] bg-white rounded-[4px] hover:bg-[#E9E3FF] hover:text-[#4318FF] cursor-pointer transition-all"
+            onclick="showSignInScr()"
           >
             Log In
           </div>
@@ -117,7 +123,77 @@
         </div>
       </div>
       <div
+        class="signInScr hidden lg:w-[30%] right-0 left-0 top-[20%] fixed mx-auto w-[60%] h-[470px] bg-[#E9E3FF] rounded-[23px] shadow-xl transition-all"
+      >
+        <div class="flex justify-end m-[20px]">
+          <img
+            class="h-[30px] w-[30px] cursor-pointer"
+            src="assets/images/close.png"
+            alt=""
+            onclick="closeSignInScr()"
+          />
+        </div>
+        <div class="flex items-center justify-center mt-[40px] mb-[20px]">
+          <img
+            class="h-[40px] w-[40px]"
+            src="assets/images/Horizon UI Avatar.png"
+            alt=""
+          />
+          <div class="text-[20px] font-bold mx-2">HorizonUI</div>
+        </div>
+        <div class="mt-[1%]">
+          <div class="flex flex-wrap items-center justify-center">
+            <div class="pl-[25%] w-[100%]">Email:</div>
+            <input
+              class="flex items-center w-[50%] h-[30px] border rounded-[12px] px-[10px] py-[12px]"
+              type="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <div class="flex flex-wrap items-center justify-center mt-[16px]">
+            <div class="pl-[25%] w-[100%]">Password:</div>
+            <input
+              class="flex items-center w-[50%] h-[30px] border rounded-[12px] px-[10px] py-[12px]"
+              type="password"
+              placeholder="password"
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center mt-[4%]">
+          <div
+            class="w-[20%] flex justify-center items-center mx-2 py-[10px] px-[20px] bg-white rounded-[4px] hover:bg-[#4318FF] hover:text-white cursor-pointer transition-all text-[12px]"
+            onclick=""
+          >
+            Log In
+          </div>
+          <div class="w-[100%]">
+            <div class="text-center">Or</div>
+            <div class="flex justify-center">
+              <div class="mx-[20px]">
+                <img
+                  class="w-[30px] h-[30px] cursor-pointer"
+                  src="assets/images/facebookblue.png"
+                  alt=""
+                />
+              </div>
+              <div class="mx-[20px]">
+                <img
+                  class="w-[30px] h-[30px] cursor-pointer"
+                  src="assets/images/Google__G.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-[4%]">
+          <div>Do not have an account?</div>
+          <div class="ml-[5px] text-[#4318FF] cursor-pointer">Sign Up</div>
+        </div>
+      </div>
+      <div
         class="pt-[100px] flex justify-between w-[80%] mx-auto h-[600px] mb-[80px]"
+        onclick="closeSignInScr()"
       >
         <div class="flex flex-wrap w-[50%] items-center">
           <div>
@@ -165,7 +241,10 @@
         </div>
       </div>
     </div>
-    <div class="flex w-[80%] h-[400px] justify-center items-center mx-auto">
+    <div
+      class="flex w-[80%] h-[400px] justify-center items-center mx-auto"
+      onclick="closeSignInScr()"
+    >
       <div class="">
         <div class="mb-[50px]">
           <div class="text-center text-[40px] font-bold my-[10px]">
@@ -234,6 +313,7 @@
     </div>
     <div
       class="flex w-[80%] h-[400px] justify-center items-center mx-auto my-[30px]"
+      onclick="closeSignInScr()"
     >
       <div
         class="w-[30%] h-[60%] hover:shadow-lg rounded-[12px] cursor-pointer"
@@ -312,6 +392,7 @@
     </div>
     <div
       class="flex h-[700px] w-[80%] justify-center items-center mx-auto my-[30px]"
+      onclick="closeSignInScr()"
     >
       <div class="flex justify-between">
         <div class="w-[45%]">
@@ -369,7 +450,10 @@
         </div>
       </div>
     </div>
-    <div class="flex h-[700px] w-[80%] justify-center items-center mx-auto">
+    <div
+      class="flex h-[700px] w-[80%] justify-center items-center mx-auto"
+      onclick="closeSignInScr()"
+    >
       <div>
         <div class="mb-[40px]">
           <div class="mb-[10px] text-center text-[40px] font-bold">
@@ -423,7 +507,10 @@
         </div>
       </div>
     </div>
-    <div class="flex w-[80%] h-[400px] justify-center items-center mx-auto">
+    <div
+      class="flex w-[80%] h-[400px] justify-center items-center mx-auto"
+      onclick="closeSignInScr()"
+    >
       <div class="flex justify-between w-[100%]">
         <div class="">
           <div class="text-[40px] font-bold">Save time with Horizon.</div>
@@ -447,6 +534,7 @@
     </div>
     <div
       class="flex flex-wrap w-[80%] h-[400px] justify-center items-center mx-auto cursor-pointer"
+      onclick="closeSignInScr()"
     >
       <div class="flex items-center w-[100%] justify-center">
         <img
