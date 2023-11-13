@@ -25,24 +25,30 @@
             />
             <div class="text-[30px] font-bold mx-2">HorizonUI</div>
           </div>
-          <div class="hidden lg:flex w-[40%] lg:justify-between text-[20px]">
+          <div
+            class="hidden lg:flex w-[40%] lg:justify-between text-[20px] lstTitle"
+          >
             <div
-              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors"
+              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors title"
+              onclick="window.location.href='#product';"
             >
               Product
             </div>
             <div
-              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors"
+              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors title"
+              onclick="window.location.href='#feature';"
             >
               Features
             </div>
             <div
-              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors"
+              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors title"
+              onclick="window.location.href='#pricing';"
             >
               Pricing
             </div>
             <div
-              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors"
+              class="text-black hover:text-[#4318FF] cursor-pointer transition-colors title"
+              onclick="window.location.href='#company';"
             >
               Company
             </div>
@@ -193,6 +199,7 @@
       </div>
       <div
         class="pt-[100px] flex justify-between w-[80%] mx-auto h-[600px] mb-[80px]"
+        id="product"
         onclick="closeSignInScr()"
       >
         <div class="flex flex-wrap w-[50%] items-center">
@@ -243,6 +250,7 @@
     </div>
     <div
       class="flex w-[80%] h-[400px] justify-center items-center mx-auto"
+      id="feature"
       onclick="closeSignInScr()"
     >
       <div class="">
@@ -392,6 +400,7 @@
     </div>
     <div
       class="flex h-[700px] w-[80%] justify-center items-center mx-auto my-[30px]"
+      id="pricing"
       onclick="closeSignInScr()"
     >
       <div class="flex justify-between">
@@ -452,6 +461,7 @@
     </div>
     <div
       class="flex h-[700px] w-[80%] justify-center items-center mx-auto"
+      id="company"
       onclick="closeSignInScr()"
     >
       <div>

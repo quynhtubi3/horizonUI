@@ -1,0 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    transition: scroll-behavior 0.5s ease-in-out;
+  }
+
+  body {
+    .active-title {
+        color: #4318FF;
+    }
+  }
