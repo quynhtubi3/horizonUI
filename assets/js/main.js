@@ -18,7 +18,6 @@ function closeSignInScr() {
 document.addEventListener("scroll", function () {
   var scrollPosition = window.scrollY || document.documentElement.scrollTop;
   const lstTitle = document.querySelectorAll(".lstTitle .title");
-  lstTitle[0].classList.add("active-title");
   if (scrollPosition >= 0 && scrollPosition <= 600) {
     lstTitle.forEach((data) => {
       data.classList.remove("active-title");
